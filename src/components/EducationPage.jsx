@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function EducationPage() {
+export default function EducationPage(props) {
+
+    console.log("Edu resumeData");
+    console.log(props.resumeData);
+
     return(<div>
     <h1>Education</h1>
     <h4>Education</h4>

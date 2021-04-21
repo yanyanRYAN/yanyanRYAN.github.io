@@ -72,8 +72,7 @@ export default function NavTabs() {
     setValue(newValue);
   };
 
-  console.log(resume);
-
+  
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -91,16 +90,16 @@ export default function NavTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0} {...console.log(value)}>
-        <SkillsPage />
+        <SkillsPage resumeData={resume.skills}  />
       </TabPanel>
       <TabPanel value={value} index={1} {...console.log(value)}>
-        <ExperiencePage />
+        <ExperiencePage resumeData={resume.experience} />
       </TabPanel>
       <TabPanel value={value} index={2} {...console.log(value)}>
-        <EducationPage />
+        <EducationPage resumeData={resume.education} />
       </TabPanel>
       <TabPanel value={value} index={3} {...console.log(value)}>
-        <ContactPage />
+        <ContactPage resumeData={resume} />
       </TabPanel>
     </div>
   );

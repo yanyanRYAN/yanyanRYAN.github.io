@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function ExperiencePage() {
+export default function ExperiencePage(props) {
+
+    console.log("Exp resumeData");
+    console.log(props.resumeData);
+
     return(<div>
     <h1>Experience</h1>
     <h4>Experience</h4>

@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default function SkillsPage(props) {
+
+    console.log("Skills resumeData");
+    console.log(props.resumeData);
+
     return(<div>
     <h1>Skills</h1>
     <h4>Skills</h4>
