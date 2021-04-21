@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SkillsPage() {
+export default function SkillsPage(props) {
     return(<div>
     <h1>Skills</h1>
     <h4>Skills</h4>

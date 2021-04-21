@@ -5,7 +5,7 @@ export default function ExperiencePage() {
     <h1>Experience</h1>
     <h4>Experience</h4>
                     <hr />
-                    <div class="work">
+                    <div>
                         <h5>Application Developer 1</h5>
                         <p>Comcast - Oakbrook Terrace, IL</p>
                         <ul>
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
                             </li>
                         </ul>
                     </div>
-                    <div class="work">
+                    <div>
                         <h5>Graduate Assistant</h5>
                         <p>Lewis University Institutional Research & Planning - Romeoville, IL</p>
                         <ul>
@@ -43,7 +43,7 @@ export default function ExperiencePage() {
                             </li>
                         </ul>
                     </div>
-                    <div class="work">
+                    <div>
                         <h5>IT Desktop Technician Intern</h5>
                         <p>Lewis University Office of Technology - Romeoville, IL</p>
                         <ul>

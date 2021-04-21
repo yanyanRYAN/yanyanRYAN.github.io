@@ -10,6 +10,7 @@ import SkillsPage from './SkillsPage';
 import ExperiencePage from './ExperiencePage';
 import EducationPage from './EducationPage';
 import ContactPage from './ContactPage';
+import resume from '../data/resume';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -70,6 +71,8 @@ export default function NavTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  console.log(resume);
 
   return (
     <div className={classes.root}>
