@@ -1,6 +1,6 @@
 const resume = { resumeHeader: {name: "Ryan Ecarma", email: "ryanpecarma@gmail.com"},
 skills: {programmingLanguages: ["JavaScript", "HTML5", "CSS3", "NodeJS", "C#", ".NetCore"],
-        programmingSkills:["React", "Express", "MongoDB", "Mongoose ODM", "RESTful APIs", "API Endpoint Testing", "Skills", "Full Stack Web Development", "JSON"],
+        programmingSkills:["React", "Express", "MongoDB", "Mongoose ODM", "RESTful APIs", "API Endpoint Testing", "DOM Manipulation", "Full Stack Web Development", "JSON"],
         frameworks: ["ReactJS", "Express.js", "Bootstrap", "jQuery", "Angular", "SharePoint 2019 (PowerApps, PowerAutomate)"],
         databases: ["MongoDB", "Mongoose", "MongoDB Atlas", "Robo 3T (MongoDB)", "Postman"],
         ideOtherTools: ["Visual Studio Code", "Atom.IO", "Heroku", "Visual Studio 2017/2019", "Microsoft SQL Developer Tools", "Azure DevOps Server/TFS", "Eclipse", "GitHub", "CMDER(Bash)"]},

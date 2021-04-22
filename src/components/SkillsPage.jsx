@@ -2,29 +2,36 @@ import React from 'react';
 
 export default function SkillsPage(props) {
 
+    const resumeData = props.resumeData;
+
+    const progLang = resumeData.programmingLanguages;
+    const progSkills = resumeData.programmingSkills;
+    const frameworks = resumeData.frameworks;
+    const databases = resumeData.databases;
+    const ideOtherTools = resumeData.ideOtherTools;
+
+
     console.log("Skills resumeData");
     console.log(props.resumeData);
 
     return(<div>
-    <h1>Skills</h1>
-    <h4>Skills</h4>
-                    <hr />
+    
+                    
                     <h5>PROGRAMMING LANGUAGES / SKILLS:</h5>
-                    <p>JavaScript, HTML5, CSS3, Java, C#, .Net, NodeJS, Express, MongoDB, ReactJS, DOM manipulation,
-                        JSON, Full Stack Web Development, API Endpoint Testing, TDD, Mongoose ODM, RESTful APIs
-                    </p>
+                    <p>{progLang.map((lang, i) => <span key={i}>{i > 0 && ", "}{lang}</span>)}</p>
+                    <p>{progSkills.map((skills, i) => <span key={i}>{i > 0 && ", "}{skills}</span>)}</p>
+                    
                     <h5>FRAMEWORKS / RUNTIME ENVIRONMENTS:</h5>
                     <p>
-                        ReactJS, Express.js, Bootstrap, jQuery, Angular, SharePoint 2019 (PowerApps, PowerAutomate)
+                        {frameworks.map((framework, i) => <span key={i}>{i > 0 && ", "}{framework}</span>)}
                     </p>
                     <h5>DATABASES / WEB ANALYSIS TOOLS:</h5>
                     <p>
-                        MongoDB, Mongoose, MongoDB Atlas, Robo 3T (MongoDB), Postman 
+                        {databases.map((database, i) => <span key={i}>{i > 0 && ", "}{database}</span>)}
                     </p>
                     <h5>IDE / OTHER TOOLS:</h5>
                     <p>
-                        Visual Studio Code, Atom.IO, Heroku, Visual Studio 2017/2019, Microsoft SQL Developer Tools,
-                        Azure DevOps Server/TFS, Eclipse, GitHub, CMDER(Bash)
+                        {ideOtherTools.map((other, i) => <span key={i}>{i > 0 && ", "}{other}</span>)}
                     </p>
     </div>)
 }

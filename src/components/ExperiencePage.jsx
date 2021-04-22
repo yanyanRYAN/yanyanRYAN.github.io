@@ -2,6 +2,9 @@ import React from 'react';
 
 export default function ExperiencePage(props) {
 
+    const experience = props.resumeData;
+    
+
     console.log("Exp resumeData");
     console.log(props.resumeData);
 
