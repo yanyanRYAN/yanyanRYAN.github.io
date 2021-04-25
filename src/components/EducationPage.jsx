@@ -2,22 +2,19 @@ import React from 'react';
 
 export default function EducationPage(props) {
 
+    const resumeData = props.resumeData;
+
     console.log("Edu resumeData");
     console.log(props.resumeData);
 
     return(<div>
-    <h1>Education</h1>
-    <h4>Education</h4>
-                    <hr />
-                    <h5>Master of Science in Computer Science</h5>
-                    <p>Lewis University, Romeoville,IL</p>
-                    <p>Concentration: Software Engineering</p>
-                    <p>Graduated: May 2019</p>
-                    <p>GPA: 3.77/4.00</p>
-                    <h5>Bachelor of Science in Computer Science</h5>
-                    <p>Lewis University, Romeoville,IL</p>
-                    <p>Concentration: Game and Simulation Programming</p>
-                    <p>Graduated: May 2017</p>
-                    <p>GPA: 3.37/4.00</p>
+    
+    {resumeData.map((edu, i) => <div key={i}>
+        <h4>{edu.degree}</h4>
+        <h5>{edu.school} - {edu.location}</h5>
+        <h6>Graduation: {edu.graduationDate}</h6>
+        <h6>GPA: {edu.gpa}</h6>
+    </div>)}
+                    
     </div>)
 }
