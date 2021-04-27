@@ -1,3 +1,4 @@
+import { Container, Typography } from '@material-ui/core';
 import React from 'react';
 
 export default function EducationPage(props) {
@@ -7,14 +8,15 @@ export default function EducationPage(props) {
     console.log("Edu resumeData");
     console.log(props.resumeData);
 
-    return(<div>
-    
+    return(
+    <div>
+    <Container>
     {resumeData.map((edu, i) => <div key={i}>
-        <h4>{edu.degree}</h4>
-        <h5>{edu.school} - {edu.location}</h5>
-        <h6>Graduation: {edu.graduationDate}</h6>
-        <h6>GPA: {edu.gpa}</h6>
+        <Typography variant="h5">{edu.degree}</Typography>
+        <Typography variant="subtitle1">{edu.school} - {edu.location}</Typography>
+        <Typography variant="subtitle2">Graduation: {edu.graduationDate}</Typography>
+        <Typography variant="body2">GPA: {edu.gpa}</Typography>
     </div>)}
-                    
+    </Container>               
     </div>)
 }
