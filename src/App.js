@@ -11,9 +11,9 @@ import { Paper, Typography } from '@material-ui/core';
 function App() {
   return (
     <div className="App">
-      <Container maxWidth={false} >
+      
         
-        <Header />
+        
         <Paper>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -29,7 +29,7 @@ function App() {
         <Footer />
         
         
-      </Container>
+      
     </div>
   );
 }

@@ -40,7 +40,7 @@ export default function ExperiencePage(props) {
         
         <Container>
             <div>
-                <Grid container spacing={1} direction="row"  alignItems="center">
+                <Grid container spacing={1} direction="row"  alignItems="center" justify='center'>
                     {resumeData.map((data, i) =>
                         <div key={i}>
                             <Grid item >

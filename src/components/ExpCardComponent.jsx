@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     root: {
+        
         minWidth: 275,
         margin: "8px 10%",
     },
@@ -30,7 +31,7 @@ export default function ExpCardComponent({data}){
                 <CardContent>
                     <Typography variant="h6" color="primary">{data.position} - {data.name}</Typography>
                     <Typography variant="subtitle2" color="secondary">{data.location}</Typography>
-                    <Typography variant="body1" className={classes.content}  gutterBottom>{data.summary}</Typography>
+                    <Typography variant="body1" className={classes.content} color="textPrimary"  gutterBottom>{data.summary}</Typography>
                 </CardContent>
             </Card>
         </div>

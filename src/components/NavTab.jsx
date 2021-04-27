@@ -75,15 +75,16 @@ export default function NavTabs() {
     setValue(newValue);
   };
 
-  
+
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs
-          
+
           value={value}
           onChange={handleChange}
           aria-label="nav tabs example"
+
           centered
         >
           <LinkTab label="Skills" href="/skills" {...a11yProps(0)} />
@@ -92,21 +93,33 @@ export default function NavTabs() {
           <LinkTab label="Contact" href="/contact" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      
+
       <TabPanel value={value} index={0} {...console.log(value)}>
-        <SkillsPage resumeData={resume.skills}  />
+        <Grid container justify='center'>
+          <SkillsPage resumeData={resume.skills} />
+        </Grid>
+
       </TabPanel>
       <TabPanel value={value} index={1} {...console.log(value)}>
-        <ExperiencePage resumeData={resume.experience} />
-        
+        <Grid container justify='center'>
+          <ExperiencePage resumeData={resume.experience} />
+        </Grid>
+
+
       </TabPanel>
       <TabPanel value={value} index={2} {...console.log(value)}>
-        <EducationPage resumeData={resume.education} />
+        <Grid container justify='center'>
+          <EducationPage resumeData={resume.education} />
+        </Grid>
+
       </TabPanel>
       <TabPanel value={value} index={3} {...console.log(value)}>
-        <ContactPage resumeData={resume} />
+        <Grid container justify='center'>
+          <ContactPage resumeData={resume.contact} />
+        </Grid>
+
       </TabPanel>
-      
+
     </div>
   );
 }
