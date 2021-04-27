@@ -11,6 +11,9 @@ import ExperiencePage from './ExperiencePage';
 import EducationPage from './EducationPage';
 import ContactPage from './ContactPage';
 import resume from '../data/resume';
+import ContentCard from './ContentCard';
+import Grid from '@material-ui/core/Grid';
+import { Paper } from '@material-ui/core';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -89,11 +92,13 @@ export default function NavTabs() {
           <LinkTab label="Contact" href="/contact" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
+      <Paper>
       <TabPanel value={value} index={0} {...console.log(value)}>
         <SkillsPage resumeData={resume.skills}  />
       </TabPanel>
       <TabPanel value={value} index={1} {...console.log(value)}>
         <ExperiencePage resumeData={resume.experience} />
+        
       </TabPanel>
       <TabPanel value={value} index={2} {...console.log(value)}>
         <EducationPage resumeData={resume.education} />
@@ -101,6 +106,7 @@ export default function NavTabs() {
       <TabPanel value={value} index={3} {...console.log(value)}>
         <ContactPage resumeData={resume} />
       </TabPanel>
+      </Paper>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { Paper } from '@material-ui/core';
 import React from 'react';
 
 export default function SkillsPage(props) {
@@ -16,7 +17,7 @@ export default function SkillsPage(props) {
 
     return(<div>
     
-                    
+                    <Paper elevation="3">
                     <h5>PROGRAMMING LANGUAGES / SKILLS:</h5>
                     <p>{progLang.map((lang, i) => <span key={i}>{i > 0 && ", "}{lang}</span>)}</p>
                     <p>{progSkills.map((skills, i) => <span key={i}>{i > 0 && ", "}{skills}</span>)}</p>
@@ -33,5 +34,6 @@ export default function SkillsPage(props) {
                     <p>
                         {ideOtherTools.map((other, i) => <span key={i}>{i > 0 && ", "}{other}</span>)}
                     </p>
+                    </Paper>
     </div>)
 }
