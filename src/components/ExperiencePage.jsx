@@ -40,8 +40,6 @@ export default function ExperiencePage(props) {
         
         <Container>
             <div>
-                
-
                 <Grid container spacing={1} direction="row"  alignItems="center">
                     {resumeData.map((data, i) =>
                         <div key={i}>
@@ -49,10 +47,8 @@ export default function ExperiencePage(props) {
                             <ExpCardComponent data={data} />
                             </Grid>
                         </div>
-
                     )}
                 </Grid>
-
             </div>
         </Container>
         

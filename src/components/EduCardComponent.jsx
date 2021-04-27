@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core';
+import {  makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     root: {
@@ -20,17 +20,20 @@ const useStyles = makeStyles({
     }
 });
 
-export default function ExpCardComponent({data}){
-    
+
+export default function EduCardComponent({edu}){
+
     const classes = useStyles();
 
-    return (
+
+    return(
         <div>
             <Card className={classes.root}>
                 <CardContent>
-                    <Typography variant="h6" color="primary">{data.position} - {data.name}</Typography>
-                    <Typography variant="subtitle2" color="secondary">{data.location}</Typography>
-                    <Typography variant="body1" className={classes.content}  gutterBottom>{data.summary}</Typography>
+                <Typography variant="h5" color="primary">{edu.degree}</Typography>
+                <Typography variant="subtitle1" color="secondary">{edu.school} - {edu.location}</Typography>
+                <Typography variant="subtitle2" color="textPrimary">Graduation: {edu.graduationDate}</Typography>
+                <Typography variant="body2" color="textSecondary">GPA: {edu.gpa}</Typography>
                 </CardContent>
             </Card>
         </div>

@@ -1,5 +1,7 @@
-import { Container, Typography } from '@material-ui/core';
 import React from 'react';
+import { Card, Container, Typography } from '@material-ui/core';
+import EduCardComponent from './EduCardComponent';
+
 
 export default function EducationPage(props) {
 
@@ -12,10 +14,7 @@ export default function EducationPage(props) {
     <div>
     <Container>
     {resumeData.map((edu, i) => <div key={i}>
-        <Typography variant="h5">{edu.degree}</Typography>
-        <Typography variant="subtitle1">{edu.school} - {edu.location}</Typography>
-        <Typography variant="subtitle2">Graduation: {edu.graduationDate}</Typography>
-        <Typography variant="body2">GPA: {edu.gpa}</Typography>
+        <EduCardComponent edu={edu} />
     </div>)}
     </Container>               
     </div>)
