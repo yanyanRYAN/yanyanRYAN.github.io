@@ -92,7 +92,7 @@ export default function NavTabs() {
           <LinkTab label="Contact" href="/contact" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
-      <Paper>
+      
       <TabPanel value={value} index={0} {...console.log(value)}>
         <SkillsPage resumeData={resume.skills}  />
       </TabPanel>
@@ -106,7 +106,7 @@ export default function NavTabs() {
       <TabPanel value={value} index={3} {...console.log(value)}>
         <ContactPage resumeData={resume} />
       </TabPanel>
-      </Paper>
+      
     </div>
   );
 }

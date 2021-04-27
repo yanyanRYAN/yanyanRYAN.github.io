@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         fontSize: 20,
     },
     content: {
-        padding: "3% 15% 0",
+        padding: "3% 7% 0",
     },
     card: {
         margin: "3% 0"
@@ -39,7 +39,7 @@ export default function ExperiencePage(props) {
         
         <Container>
             <div>
-                <h2>Experience</h2>
+                
 
                 <Grid container spacing={3} direction="row" justify="space-evenly" alignItems="center">
                     {resumeData.map((data, i) =>

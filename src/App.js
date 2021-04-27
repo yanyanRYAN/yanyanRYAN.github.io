@@ -14,6 +14,7 @@ function App() {
       <Container maxWidth={false} >
         
         <Header />
+        <Paper>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Typography variant="h2">
@@ -24,7 +25,9 @@ function App() {
           
         </header>
         <NavTab />
+        </Paper>
         <Footer />
+        
         
       </Container>
     </div>
