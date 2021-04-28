@@ -9,26 +9,30 @@ import Container from '@material-ui/core/Container';
 import { Paper, Typography } from '@material-ui/core';
 
 function App() {
+
+
+
   return (
-    <div className="App">
+    <div >
       
         
-        
-        <Paper>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Typography variant="h2">
-          
-            Ryan Ecarma
-          
-          </Typography>
-          
-        </header>
-        <NavTab />
-        </Paper>
+        <div className="App">
+          <Paper>
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <Typography variant="h2">
+              
+                Ryan Ecarma
+              
+              </Typography>
+              
+            </header>
+            <NavTab />
+          </Paper>
+        <div style={{position: "absolute", bottom: 0, width: "100%"}}>
         <Footer />
-        
-        
+        </div>
+        </div>
       
     </div>
   );
