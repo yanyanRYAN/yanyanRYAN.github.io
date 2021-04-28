@@ -24,12 +24,22 @@ import ExpCardComponent from './ExpCardComponent';
 //     }
 // });
 
+const useStyles = makeStyles((theme)=>({
+    root: {
+        flexGrow: 1,
+    },
+    gridItem: {
+        padding: theme.spacing(10),
+        textAlign: 'center',
+        
+    },
+}));
 
 
 
 
 export default function ExperiencePage(props) {
-    //const classes = useStyles();
+    const classes = useStyles();
     const resumeData = props.resumeData
 
 
@@ -42,11 +52,11 @@ export default function ExperiencePage(props) {
             <div>
                 <Grid container spacing={1} direction="row"  alignItems="center" justify='center'>
                     {resumeData.map((data, i) =>
-                        <div key={i}>
-                            <Grid item >
+                        
+                            <Grid className={classes.gridItem} key={i} item container>
                             <ExpCardComponent data={data} />
                             </Grid>
-                        </div>
+                        
                     )}
                 </Grid>
             </div>

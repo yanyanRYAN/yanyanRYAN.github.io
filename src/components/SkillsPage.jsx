@@ -30,8 +30,8 @@ export default function SkillsPage(props) {
 
     return(<div>
                     
-                    <Paper elevation="3">
-                    <Grid>
+                    <Paper elevation="1">
+                    <Grid container spacing={1} direction="row" justify='center' alignItems='center'>
                     <div className={classes.root}>
                     <Typography variant="h5" color="primary">PROGRAMMING LANGUAGES / SKILLS:</Typography>
                     {progLang.map((lang, i) => <Chip key={i} label={lang} size="small" color="secondary" variant="outlined" clickable></Chip>)}
