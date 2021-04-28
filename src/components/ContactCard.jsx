@@ -9,15 +9,16 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        minWidth: 345,
     },
     media: {
         height: 140,
+        width: 256
     },
 });
 
 
-export default function ContactCard(){
+export default function ContactCard({contactData}){
 
     const classes = useStyles();
 
@@ -25,10 +26,10 @@ export default function ContactCard(){
     <div>
         <Card>
             <CardActionArea>
-                <CardMedia className={classes.media} image="https://yanyanryan.github.io/content/images/github.png" title="GitHub" />
-                <Typography gutterBottom variant="h5" component="h2">GitHub</Typography>
+                <CardMedia className={classes.media} image={contactData.img} title="GitHub" />
+                <Typography gutterBottom variant="h5" component="h2">{contactData.method}</Typography>
                 <Typography varient="body2" color="textSecondary" component="p">
-                    This is my github repository which houses some of my work from my freetime.
+                    {contactData.content}
                 </Typography>
                 
             </CardActionArea>

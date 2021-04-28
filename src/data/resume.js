@@ -1,3 +1,8 @@
+
+import linkedInPic from '../data/linkedin.jpg';
+import gmailPic from '../data/Gmail-logo-color.jpg';
+import githubPic from '../data/github.png'
+
 const resume = { resumeHeader: {name: "Ryan Ecarma", email: "ryanpecarma@gmail.com"},
 skills: {programmingLanguages: ["JavaScript", "HTML5", "CSS3", "NodeJS", "C#", ".NetCore"],
         programmingSkills:["React", "Express", "MongoDB", "Mongoose ODM", "RESTful APIs", "API Endpoint Testing", "DOM Manipulation", "Full Stack Web Development", "JSON"],
@@ -12,7 +17,7 @@ experience: [{name: "Comcast", position: "Application Developer 1", location: "O
 education: [{degree: "Master of Science in Computer Science", school: "Lewis University", location: "Romeoville,IL", concentration: "Software Engineering", graduationDate: "May 2019", gpa: "3.77"},
             {degree: "Bachelor of Science in Computer Science", school: "Lewis University", location: "Romeoville,IL", concentration: "Game and Simulation Programming", graduationDate: "May 2017", gpa: "3.37"}],
 other: {},
-contact: [{method: "LinkedIn", url: "", img: "", content: ""},{method:"Github", url: "", img:"", content: ""}]
+contact: [{method: "LinkedIn", url: "", img: linkedInPic, content: "LinkedIn page"},{method:"Github", url: "", img:githubPic, content: "Github repository"}]
 
     
 }

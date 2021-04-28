@@ -6,8 +6,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    paper: {
-      padding: theme.spacing(2),
+    gridItem: {
+      padding: theme.spacing(10),
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
@@ -17,15 +17,22 @@ const useStyles = makeStyles((theme) => ({
 export default function ContactPage(props) {
     const classes = useStyles();
 
+    const resumeData = props.resumeData;
+    console.log("Resume data");
+    console.log(resumeData);
 
     return(<div>
     <h1 >Contact</h1>
-    <div >
-    <Grid container spacing={3} justify='center' alignItems='center'>
-        <Grid item xs={4}><ContactCard /></Grid>
-        <Grid item xs={4}><ContactCard /></Grid>
-        <Grid item xs={4}><ContactCard /></Grid>
+    
+    <Grid container spacing={1} direction="row" justify='center' alignItems='center'>
+        {resumeData.map((contact,i) => 
+        <div >
+          <Grid className={classes.gridItem} key={i} container item lg={4}><ContactCard contactData={contact} /></Grid>
+
+        </div>)}
+        
+
     </Grid>
-    </div>
+    
     </div>)
 }
