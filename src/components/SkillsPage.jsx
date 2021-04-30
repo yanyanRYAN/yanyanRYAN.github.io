@@ -48,8 +48,10 @@ export default function SkillsPage(props) {
                     <Typography variant="h5" color="primary">IDE / OTHER TOOLS:</Typography>
                     
                         {ideOtherTools.map((other, i) => <Chip key={i} label={other} size="small" color="secondary" variant="outlined" clickable></Chip>)}
-                    
+                    <br />
+                    <br />
                     </div>
+                    
                     </Grid>
                     </Paper>
                     

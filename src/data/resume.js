@@ -1,11 +1,13 @@
 
 import linkedInPic from '../data/linkedin.jpg';
 import gmailPic from '../data/Gmail-logo-color.jpg';
-import githubPic from '../data/github.png'
+import githubPic from '../data/github.png';
+import linkedInAvatarPic from '../data/RyanEcarma.jpg';
+import githubAvatarPic from '../data/yanyanRYAN.jpg';
 
 const resume = { resumeHeader: {name: "Ryan Ecarma", email: "ryanpecarma@gmail.com"},
 skills: {programmingLanguages: ["JavaScript", "HTML5", "CSS3", "NodeJS", "C#", ".NetCore"],
-        programmingSkills:["React", "Express", "MongoDB", "Mongoose ODM", "RESTful APIs", "API Endpoint Testing", "DOM Manipulation", "Full Stack Web Development", "JSON"],
+        programmingSkills:["React", "Express", "MongoDB", "Mongoose ODM", "RESTful APIs (REST + JSON)", "API Endpoint Testing", "DOM Manipulation", "Full Stack Web Development", "JSON"],
         frameworks: ["ReactJS", "Express.js", "Bootstrap", "jQuery", "Angular", "SharePoint 2019 (PowerApps, PowerAutomate)"],
         databases: ["MongoDB", "Mongoose", "MongoDB Atlas", "Robo 3T (MongoDB)", "Postman"],
         ideOtherTools: ["Visual Studio Code", "Atom.IO", "Heroku", "Visual Studio 2017/2019", "Microsoft SQL Developer Tools", "Azure DevOps Server/TFS", "Eclipse", "GitHub", "CMDER(Bash)"]},
@@ -17,7 +19,8 @@ experience: [{name: "Comcast", position: "Application Developer 1", location: "O
 education: [{degree: "Master of Science in Computer Science", school: "Lewis University", location: "Romeoville,IL", concentration: "Software Engineering", graduationDate: "May 2019", gpa: "3.77"},
             {degree: "Bachelor of Science in Computer Science", school: "Lewis University", location: "Romeoville,IL", concentration: "Game and Simulation Programming", graduationDate: "May 2017", gpa: "3.37"}],
 other: {},
-contact: [{method: "LinkedIn", url: "", img: linkedInPic, content: "LinkedIn page"},{method:"Github", url: "", img:githubPic, content: "Github repository"}]
+contact: [{method: "LinkedIn", url: "https://www.linkedin.com/in/ryanecarma/", img: linkedInPic, avatarPic: linkedInAvatarPic, title: "Ryan Ecarma", subheader: "Web Applications Developer", content: "Link up with me through LinkedIn."},
+{method:"Github", url:"https://github.com/yanyanRYAN", img:githubPic, avatarPic: githubAvatarPic, title: "YanyanRYAN", subheader: "Github repository",  content: "Look through my Github repository."}]
 
     
 }

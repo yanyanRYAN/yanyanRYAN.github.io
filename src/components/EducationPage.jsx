@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     gridItem: {
-        padding: theme.spacing(10),
+        padding: theme.spacing(6),
         textAlign: 'center',
         color: theme.palette.text.secondary,
     }

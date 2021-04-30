@@ -17,7 +17,7 @@ function App() {
       
         
         <div className="App">
-          <Paper>
+          
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
               <Typography variant="h2">
@@ -28,7 +28,7 @@ function App() {
               
             </header>
             <NavTab />
-          </Paper>
+          
         <div style={{position: "absolute", bottom: 0, width: "100%"}}>
         <Footer />
         </div>
