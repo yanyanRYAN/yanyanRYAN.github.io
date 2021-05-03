@@ -3,6 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import {  makeStyles } from '@material-ui/core';
+import SchoolIcon from '@material-ui/icons/School';
 
 const useStyles = makeStyles({
     root: {
@@ -29,7 +30,9 @@ export default function EduCardComponent({edu}){
     return(
         <div>
             <Card className={classes.root}>
+                
                 <CardContent>
+                <Typography color=""><SchoolIcon /></Typography>
                 <Typography variant="h5" color="primary">{edu.degree}</Typography>
                 <Typography variant="subtitle1" color="secondary">{edu.school} - {edu.location}</Typography>
                 <Typography variant="subtitle2" color="textPrimary">Graduation: {edu.graduationDate}</Typography>

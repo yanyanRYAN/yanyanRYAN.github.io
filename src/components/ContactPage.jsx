@@ -30,12 +30,13 @@ export default function ContactPage(props) {
     <Typography variant="h4">Contact Me</Typography>
 
     <Typography variant="body2">Email: ryanpecarma@gmail.com 
-      <Tooltip title="Email">
-        <IconButton href="mailto: ryanpecarma@gmail.com"><EmailIcon/></IconButton>
-      </Tooltip>
       <Tooltip title="Copy To Clipboard">
         <IconButton value="ryanpecarma@gmail.com" onClick={()=> {navigator.clipboard.writeText('ryanpecarma@gmail.com'); alert("Copied to clipboard") }}><FileCopyIcon/></IconButton>
       </Tooltip>
+      <Tooltip title="Email">
+        <IconButton href="mailto: ryanpecarma@gmail.com"><EmailIcon/></IconButton>
+      </Tooltip>
+      
     </Typography> 
 
     <Grid container spacing={1} direction="row" justify='center' alignItems='center'>

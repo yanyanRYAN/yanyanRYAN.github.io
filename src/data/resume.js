@@ -4,6 +4,8 @@ import gmailPic from '../data/Gmail-logo-color.jpg';
 import githubPic from '../data/github.png';
 import linkedInAvatarPic from '../data/RyanEcarma.jpg';
 import githubAvatarPic from '../data/yanyanRYAN.jpg';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const resume = { resumeHeader: {name: "Ryan Ecarma", email: "ryanpecarma@gmail.com"},
 skills: {programmingLanguages: ["JavaScript", "HTML5", "CSS3", "NodeJS", "C#", ".NetCore"],
@@ -19,8 +21,8 @@ experience: [{name: "Comcast", position: "Application Developer 1", location: "O
 education: [{degree: "Master of Science in Computer Science", school: "Lewis University", location: "Romeoville,IL", concentration: "Software Engineering", graduationDate: "May 2019", gpa: "3.77"},
             {degree: "Bachelor of Science in Computer Science", school: "Lewis University", location: "Romeoville,IL", concentration: "Game and Simulation Programming", graduationDate: "May 2017", gpa: "3.37"}],
 other: {},
-contact: [{method: "LinkedIn", url: "https://www.linkedin.com/in/ryanecarma/", img: linkedInPic, avatarPic: linkedInAvatarPic, title: "Ryan Ecarma", subheader: "Web Applications Developer", content: "Link up with me through LinkedIn."},
-{method:"Github", url:"https://github.com/yanyanRYAN", img:githubPic, avatarPic: githubAvatarPic, title: "YanyanRYAN", subheader: "Github repository",  content: "Look through my Github repository."}]
+contact: [{method: "LinkedIn",icon: LinkedInIcon , url: "https://www.linkedin.com/in/ryanecarma/", img: linkedInPic, avatarPic: linkedInAvatarPic, title: "Ryan Ecarma", subheader: "Web Applications Developer", content: "Link up with me through LinkedIn."},
+{method:"Github",icon: GitHubIcon , url:"https://github.com/yanyanRYAN", img:githubPic, avatarPic: githubAvatarPic, title: "YanyanRYAN", subheader: "Github repository",  content: "Look through my Github repository."}]
 
     
 }

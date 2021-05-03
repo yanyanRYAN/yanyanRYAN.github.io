@@ -4,17 +4,21 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavTab from './components/NavTab';
-import SimpleContainer from './components/SimpleContainer'
+
 import Container from '@material-ui/core/Container';
-import { Paper, Typography } from '@material-ui/core';
+import { createMuiTheme, Paper, Typography, ThemeProvider } from '@material-ui/core';
 
 function App() {
-
-
+  
+  const darkTheme = createMuiTheme({
+    palette: {
+      type: 'dark',
+    },
+  });
 
   return (
     <div >
-      
+        
         
         <div className="App">
           
@@ -33,7 +37,7 @@ function App() {
         <Footer />
         </div>
         </div>
-      
+        
     </div>
   );
 }

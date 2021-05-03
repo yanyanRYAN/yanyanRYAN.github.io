@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -13,7 +13,8 @@ import ContactPage from './ContactPage';
 import resume from '../data/resume';
 import ContentCard from './ContentCard';
 import Grid from '@material-ui/core/Grid';
-import { Paper } from '@material-ui/core';
+import { Paper, ThemeProvider } from '@material-ui/core';
+import { blueGrey, lightBlue, orange } from '@material-ui/core/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -67,6 +68,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const backgroundStyle = {
+  backgroundColor: "#fff7de",
+}
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: orange[500]
+    },
+    secondary: {
+      main: blueGrey[500]
+    },
+  }
+})
+
+const darkTheme = createMuiTheme({
+  palette: {
+    type: 'dark',
+  },
+});
+
 export default function NavTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -77,7 +99,9 @@ export default function NavTabs() {
 
 
   return (
-    <div className={classes.root}>
+    
+    <div className={classes.root} style={backgroundStyle}>
+      <ThemeProvider theme={theme}>
       <AppBar position="static">
         <Tabs
 
@@ -87,13 +111,16 @@ export default function NavTabs() {
 
           centered
         >
+        
           <LinkTab label="Skills" href="/skills" {...a11yProps(0)} />
           <LinkTab label="Experience" href="/experience" {...a11yProps(1)} />
           <LinkTab label="Education" href="/education" {...a11yProps(2)} />
           <LinkTab label="Contact" href="/contact" {...a11yProps(3)} />
+        
         </Tabs>
       </AppBar>
-
+      </ThemeProvider>
+      <ThemeProvider theme={theme}>
       <TabPanel value={value} index={0} {...console.log(value)}>
         <Grid container justify='center'>
           <SkillsPage resumeData={resume.skills} />
@@ -119,7 +146,9 @@ export default function NavTabs() {
         </Grid>
 
       </TabPanel>
+      </ThemeProvider>
 
     </div>
+    
   );
 }
