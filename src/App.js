@@ -1,20 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavTab from './components/NavTab';
 
-import Container from '@material-ui/core/Container';
-import { createMuiTheme, Paper, Typography, ThemeProvider } from '@material-ui/core';
 
 function App() {
   
-  const darkTheme = createMuiTheme({
-    palette: {
-      type: 'dark',
-    },
-  });
+  
 
   return (
     <div >
@@ -22,15 +16,7 @@ function App() {
         
         <div className="App">
           
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <Typography variant="h2">
-              
-                Ryan Ecarma
-              
-              </Typography>
-              
-            </header>
+            <Header appHeaderStyle="App-header" appHeaderTextSTyle="Header-text" />
             <NavTab />
           
         <div style={{position: "absolute", bottom: 0, width: "100%"}}>

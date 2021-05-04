@@ -11,10 +11,10 @@ import ExperiencePage from './ExperiencePage';
 import EducationPage from './EducationPage';
 import ContactPage from './ContactPage';
 import resume from '../data/resume';
-import ContentCard from './ContentCard';
+
 import Grid from '@material-ui/core/Grid';
-import { Paper, ThemeProvider } from '@material-ui/core';
-import { blueGrey, lightBlue, orange } from '@material-ui/core/colors';
+import {  ThemeProvider } from '@material-ui/core';
+import { blueGrey, orange } from '@material-ui/core/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -83,11 +83,11 @@ const theme = createMuiTheme({
   }
 })
 
-const darkTheme = createMuiTheme({
-  palette: {
-    type: 'dark',
-  },
-});
+// const darkTheme = createMuiTheme({
+//   palette: {
+//     type: 'dark',
+//   },
+// });
 
 export default function NavTabs() {
   const classes = useStyles();

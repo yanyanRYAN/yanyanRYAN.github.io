@@ -35,10 +35,7 @@ const useStyles = makeStyles({
 export default function ContactCard({contactData}){
 
     const classes = useStyles();
-    function loadIconComponents(name) {
-        const iconComponent = React.lazy(() => import(contactData.icon));
-        return iconComponent
-    }
+    
 
     function renderCardIcon() {
         if(contactData.method === "LinkedIn"){
@@ -56,7 +53,7 @@ export default function ContactCard({contactData}){
                     <Avatar alt={contactData.title + " " + contactData.subheader} src={contactData.avatarPic}/>
                 } title={contactData.title} subheader={contactData.subheader} action={renderCardIcon()} />
                 
-                <CardActionArea href={contactData.url} target="_blank">
+                <CardActionArea >
                     <CardMedia className={classes.media} image={contactData.img} title="GitHub" />
                     <CardContent>
                     

@@ -25,8 +25,7 @@ export default function SkillsPage(props) {
     const ideOtherTools = resumeData.ideOtherTools;
 
 
-    console.log("Skills resumeData");
-    console.log(props.resumeData);
+    
 
     return(<div>
                     

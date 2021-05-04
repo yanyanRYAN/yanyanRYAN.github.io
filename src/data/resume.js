@@ -1,6 +1,5 @@
 
 import linkedInPic from '../data/linkedin.jpg';
-import gmailPic from '../data/Gmail-logo-color.jpg';
 import githubPic from '../data/github.png';
 import linkedInAvatarPic from '../data/RyanEcarma.jpg';
 import githubAvatarPic from '../data/yanyanRYAN.jpg';

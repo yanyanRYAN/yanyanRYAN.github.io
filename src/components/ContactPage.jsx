@@ -41,8 +41,8 @@ export default function ContactPage(props) {
 
     <Grid container spacing={1} direction="row" justify='center' alignItems='center'>
       {resumeData.map((contact, i) =>
-        <div >
-          <Grid className={classes.gridItem} key={i} container item >
+        <div key={i} >
+          <Grid className={classes.gridItem}  container item >
             <ContactCard contactData={contact} />
           </Grid>
 

@@ -9,7 +9,7 @@ function Footer(){
         
     
     return(<div  >
-    <Typography variant="footer" color="textSecondary">Ecarma ©{year}</Typography>
+    <Typography variant="body2" color="textSecondary">Ecarma ©{year}</Typography>
     
     </div>)
 }
