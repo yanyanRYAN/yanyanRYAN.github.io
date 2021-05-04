@@ -1,5 +1,5 @@
 
-import linkedInPic from '../data/linkedin.jpg';
+import linkedInPic from '../data/linkedin.png';
 import githubPic from '../data/github.png';
 import linkedInAvatarPic from '../data/RyanEcarma.jpg';
 import githubAvatarPic from '../data/yanyanRYAN.jpg';
