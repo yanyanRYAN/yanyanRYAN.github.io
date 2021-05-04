@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
           },
     },
     skillHeaders: {
-        padding: "0 0 8px"
+        margin: "2% 0 1%"
     },
 }));
 
