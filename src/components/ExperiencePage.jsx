@@ -24,6 +24,7 @@ import ExpCardComponent from './ExpCardComponent';
 const useStyles = makeStyles((theme)=>({
     root: {
         flexGrow: 1,
+        marginBottom: "3%"
     },
     gridItem: {
         padding: theme.spacing(10),
@@ -42,7 +43,7 @@ export default function ExperiencePage(props) {
 
     return (
         
-        <Container>
+        <Container className={classes.root}>
             <div>
                 <Grid container spacing={1} direction="row"  alignItems="center" justify='center'>
                     {resumeData.map((data, i) =>

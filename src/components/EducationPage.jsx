@@ -7,10 +7,15 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     gridItem: {
-        padding: theme.spacing(6),
+        padding: theme.spacing(1),
         textAlign: 'center',
         color: theme.palette.text.secondary,
-    }
+    },
+    grid: {
+        marginTop: "3%",
+        padding: "0 0 0 "
+    },
+
 }));
 
 
@@ -21,8 +26,8 @@ export default function EducationPage(props) {
     const resumeData = props.resumeData;
 
     return (
-            <div>
-                <Grid container spacing={1} direction="row" alignItems="center" justify='center'>
+            <div className={classes.root}>
+                <Grid className={classes.grid} container spacing={1} direction="row" alignItems="center" justify='center'>
                     {resumeData.map((edu, i) =>
                         <div key={i}>
                         <Grid className={classes.gridItem}  item container >

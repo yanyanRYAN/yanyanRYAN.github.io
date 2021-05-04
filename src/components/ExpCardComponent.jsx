@@ -8,16 +8,17 @@ const useStyles = makeStyles({
     root: {
         
         minWidth: 275,
-        margin: "8px 10%",
+        margin: "2% 10% 0 ",
     },
     title: {
-        fontSize: 20,
+        
+        marginTop: "1%"
     },
     content: {
-        padding: "3% 7% 0",
+        padding: "2% 7% 2%",
     },
     card: {
-        margin: "3% 0"
+        margin: "3% 3% 0"
     }
 });
 
@@ -26,10 +27,10 @@ export default function ExpCardComponent({data}){
     const classes = useStyles();
 
     return (
-        <div>
-            <Card className={classes.root}>
+        <div className={classes.root}>
+            <Card className={null} >
                 <CardContent>
-                    <Typography variant="h6" color="primary">{data.position} - {data.name}</Typography>
+                    <Typography className={classes.title} variant="h6" color="primary">{data.position} - {data.name}</Typography>
                     <Typography variant="subtitle2" color="secondary">{data.location}</Typography>
                     <Typography variant="body1" className={classes.content} color="textPrimary"  gutterBottom>{data.summary}</Typography>
                 </CardContent>

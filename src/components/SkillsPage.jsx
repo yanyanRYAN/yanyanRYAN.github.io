@@ -3,12 +3,16 @@ import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: "0 15% 0",
+        padding: "2% 15% 2%",
+        margin: "0 0 0",
         justifyContent: 'center',
         flexWrap: 'wrap',
         '& > *': {
             margin: theme.spacing(0.7),
           },
+    },
+    skillHeaders: {
+        padding: "0 0 8px"
     },
 }));
 
@@ -32,19 +36,19 @@ export default function SkillsPage(props) {
                     <Paper elevation={1}>
                     <Grid container spacing={1} direction="row" justify='center' alignItems='center'>
                     <div className={classes.root}>
-                    <Typography variant="h5" color="primary">PROGRAMMING LANGUAGES / SKILLS:</Typography>
+                    <Typography className={classes.skillHeaders} variant="h5" color="primary">PROGRAMMING LANGUAGES / SKILLS:</Typography>
                     {progLang.map((lang, i) => <Chip key={i} label={lang} size="small" color="secondary" variant="outlined" clickable></Chip>)}
                     {progSkills.map((skills, i) => <Chip key={i} label={skills} size="small"  color="secondary" variant="outlined" clickable></Chip>)}
                     
-                    <Typography variant="h5" color="primary">FRAMEWORKS / RUNTIME ENVIRONMENTS:</Typography>
+                    <Typography className={classes.skillHeaders} variant="h5" color="primary">FRAMEWORKS / RUNTIME ENVIRONMENTS:</Typography>
                     
                         {frameworks.map((framework, i) => <Chip key={i} label={framework} size="small" color="secondary" variant="outlined" clickable></Chip>)}
                     
-                    <Typography variant="h5" color="primary">DATABASES / WEB ANALYSIS TOOLS:</Typography>
+                    <Typography className={classes.skillHeaders} variant="h5" color="primary">DATABASES / WEB ANALYSIS TOOLS:</Typography>
                     
                         {databases.map((database, i) => <Chip key={i} label={database} size="small" color="secondary" variant="outlined" clickable></Chip>)}
                     
-                    <Typography variant="h5" color="primary">IDE / OTHER TOOLS:</Typography>
+                    <Typography className={classes.skillHeaders} variant="h5" color="primary">IDE / OTHER TOOLS:</Typography>
                     
                         {ideOtherTools.map((other, i) => <Chip key={i} label={other} size="small" color="secondary" variant="outlined" clickable></Chip>)}
                     <br />
