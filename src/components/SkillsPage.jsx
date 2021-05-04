@@ -29,7 +29,7 @@ export default function SkillsPage(props) {
 
     return(<div>
                     
-                    <Paper elevation="1">
+                    <Paper elevation={1}>
                     <Grid container spacing={1} direction="row" justify='center' alignItems='center'>
                     <div className={classes.root}>
                     <Typography variant="h5" color="primary">PROGRAMMING LANGUAGES / SKILLS:</Typography>

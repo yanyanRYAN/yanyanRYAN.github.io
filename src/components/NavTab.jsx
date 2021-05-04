@@ -108,7 +108,6 @@ export default function NavTabs() {
           value={value}
           onChange={handleChange}
           aria-label="nav tabs example"
-
           centered
         >
         
@@ -121,30 +120,33 @@ export default function NavTabs() {
       </AppBar>
       </ThemeProvider>
       <ThemeProvider theme={theme}>
-      <TabPanel value={value} index={0} {...console.log(value)}>
+      <TabPanel value={value} index={0}>
+        <div>
         <Grid container justify='center'>
           <SkillsPage resumeData={resume.skills} />
         </Grid>
-
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={1} {...console.log(value)}>
+      <TabPanel value={value} index={1}>
+        <div>
         <Grid container justify='center'>
           <ExperiencePage resumeData={resume.experience} />
         </Grid>
-
-
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={2} {...console.log(value)}>
+      <TabPanel value={value} index={2}>
+        <div>
         <Grid container justify='center'>
           <EducationPage resumeData={resume.education} />
         </Grid>
-
+        </div>
       </TabPanel>
-      <TabPanel value={value} index={3} {...console.log(value)}>
+      <TabPanel value={value} index={3}>
+        <div>
         <Grid container justify='center'>
           <ContactPage resumeData={resume.contact} />
         </Grid>
-
+        </div>
       </TabPanel>
       </ThemeProvider>
 

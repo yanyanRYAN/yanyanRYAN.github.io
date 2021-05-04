@@ -20,11 +20,7 @@ export default function ContactPage(props) {
   const classes = useStyles();
 
   const resumeData = props.resumeData;
-  console.log("Resume data");
-  console.log(resumeData);
-
   
-
   return (<div>
 
     <Typography variant="h4">Contact Me</Typography>

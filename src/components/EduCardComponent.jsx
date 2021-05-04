@@ -32,7 +32,7 @@ export default function EduCardComponent({edu}){
             <Card className={classes.root}>
                 
                 <CardContent>
-                <Typography color=""><SchoolIcon /></Typography>
+                <Typography ><SchoolIcon /></Typography>
                 <Typography variant="h5" color="primary">{edu.degree}</Typography>
                 <Typography variant="subtitle1" color="secondary">{edu.school} - {edu.location}</Typography>
                 <Typography variant="subtitle2" color="textPrimary">Graduation: {edu.graduationDate}</Typography>
