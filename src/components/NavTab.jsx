@@ -84,6 +84,17 @@ const theme = createMuiTheme({
   }
 })
 
+const contentTheme = createMuiTheme({
+  palette: {
+    primary: {
+      main: orange[800]
+    },
+    secondary: {
+      main: blueGrey[500]
+    },
+  }
+})
+
 // const darkTheme = createMuiTheme({
 //   palette: {
 //     type: 'dark',
@@ -120,7 +131,7 @@ export default function NavTabs() {
         </Tabs>
       </AppBar>
       </ThemeProvider>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={contentTheme}>
       <TabPanel value={value} index={0}>
         <div>
         <Grid container justify='center'>
