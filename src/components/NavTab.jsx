@@ -11,6 +11,7 @@ import ExperiencePage from './ExperiencePage';
 import EducationPage from './EducationPage';
 import ContactPage from './ContactPage';
 import resume from '../data/resume';
+import SkillsPageWithCards from './SkillsPageWithCards'
 
 import Grid from '@material-ui/core/Grid';
 import {  ThemeProvider } from '@material-ui/core';
@@ -123,7 +124,7 @@ export default function NavTabs() {
       <TabPanel value={value} index={0}>
         <div>
         <Grid container justify='center'>
-          <SkillsPage resumeData={resume.skills} />
+          <SkillsPageWithCards resumeData={resume.skills} />
         </Grid>
         </div>
       </TabPanel>

@@ -31,7 +31,8 @@ export default function ExpCardComponent({data}){
             <Card className={null} >
                 <CardContent>
                     <Typography className={classes.title} variant="h6" color="primary">{data.position} - {data.name}</Typography>
-                    <Typography variant="subtitle2" color="secondary">{data.location}</Typography>
+                    <Typography variant="subtitle1" color="secondary">{data.location}</Typography>
+                    <Typography variant="subtitle2">{data.length}</Typography>
                     <Typography variant="body1" className={classes.content} color="textPrimary"  gutterBottom>{data.summary}</Typography>
                 </CardContent>
             </Card>
